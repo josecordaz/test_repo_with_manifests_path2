@@ -1,0 +1,15 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-68b9e0a990dad2966ea6f12743aad9ba
+  name: test
+  namespace: wego-system
+spec:
+  branch: main
+  config_url: ssh://git@github.com/josecordaz/test_repo_with_manifests_path2.git
+  deployment_type: kustomize
+  path: ./mycustompathtomanifests
+  source_type: git
+  url: ssh://git@github.com/josecordaz/test_repo_with_manifests_path2.git
